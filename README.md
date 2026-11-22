@@ -2,13 +2,12 @@
 Blog Website template for a bussiness brand
 
 # Design
-https://www.figma.com/design/6Pxuzh9N7uscTmrOdpN4O8/AI-Blog-Website-UI-Template---Dark-Theme-%7C-Produce-UI--Community-?node-id=18-214&t=VWTyP5rap9i9VxXp-1
+https://www.figma.com/design/jOKncGVH0Jp1FIAfW68UK8/Nutritionist---Light-Theme-Healthy-Diet-Planning-Website-UI-Design-Template---FREE-Editable----Community-?node-id=18-256&t=gDigNjo6zBseye0z-1
 
 # GIT
-https://github.com/sakadziartem7-wq/future-tech
+https://github.com/sakadziartem7-wq/Nutritionist.git
 
 # Github-pages site
-https://sakadziartem7-wq.github.io/future-tech/
 
 # Commands
 
