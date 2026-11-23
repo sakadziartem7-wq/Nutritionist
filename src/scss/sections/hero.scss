@@ -1,0 +1,126 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.hero {
+  @include flex(flex-start, center, 0);
+  flex-direction: column;
+
+  @media (min-width: $laptop) {
+    flex-direction: row;
+  }
+
+  &__img {
+    width: 390px;
+    height: 373px;
+
+    @media (min-width: $laptop) {
+      width: 710px;
+      height: 712px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 949px;
+      height: 832px;
+    }
+  }
+
+  &__contant {
+    @include flex(flex-start, center, 16px);
+    flex-direction: column;
+
+    @media (min-width: $laptop) {
+      padding-left: 40px;
+      max-width: 610px;
+      align-items: flex-start;
+    }
+
+    @media (min-width: $desktop) {
+      padding-left: 50px;
+      max-width: 759px;
+    }
+  }
+
+  &__number {
+    color: $dark-green-20;
+    font-family: $font-urbanist;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__customers {
+    margin-top: -21px;
+    @include flex(flex-start, center, 8px);
+    flex-direction: column;
+
+    @media (min-width: $laptop) {
+      margin-top: 0;
+      flex-direction: row;
+      order: 1;
+      margin-top: 50px;
+    }
+  }
+
+  &__info {
+    color: $grey-20;
+    text-align: center;
+    font-family: $font-urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    max-width: 358px;
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+      min-width: 610px;
+      text-align: left;
+      margin-top: 16px;
+    }
+  }
+
+  &__avatar {
+    padding: 6px 8px;
+    width: 102px;
+    height: 52px;
+    border-radius: 58px;
+    border: 1px solid $green-70;
+    background: $green-97;
+    @include flex(flex-start, flex-start, 0);
+  }
+
+  &__avatars {
+    width: 40px;
+    height: 40px;
+
+    &:nth-child(n + 2) {
+      margin-left: -16px;
+    }
+  }
+
+  &__text {
+    color: $dark-green-20;
+    font-family: $font-urbanist;
+    font-size: 18px;
+    font-weight: 600;
+
+    @media (min-width: $laptop) {
+      font-size: 22px;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    color: $dark-green-15;
+    text-align: center;
+    font-family: $font-urbanist;
+    font-size: 38px;
+    font-weight: 700;
+
+    @media (min-width: $laptop) {
+      font-size: 48px;
+      max-width: 560px;
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+}
