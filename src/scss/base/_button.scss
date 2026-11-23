@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.button {
+  border-radius: 6px;
+  background: $green-70;
+  font-size: 14px;
+  color: $grey-15;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  @include flex(center, center, 0);
+
+  &:hover {
+    background: $green-80;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+  }
+}
