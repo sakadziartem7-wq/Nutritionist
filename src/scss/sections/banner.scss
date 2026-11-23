@@ -1,3 +1,101 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
+.banner {
+  position: relative;
+  overflow: hidden;
+  background: $dark-green-15;
+  height: 98px;
+  padding-top: 40px;
+  padding-bottom: 14px;
+
+  @media (min-width: $laptop) {
+    height: 68px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 72px;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+
+    @media (min-width: $laptop) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    background: $dark-green-20;
+    padding: 8px;
+    border-radius: 6px;
+    @include flex(flex-start, center, 12px);
+
+    @media (min-width: $laptop) {
+      max-width: 1280px;
+      justify-content: center;
+    }
+
+    @media (min-width: $desktop) {
+      max-width: 1596px;
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-family: $font-urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+    }
+  }
+
+  &__arrow {
+    width: 12px;
+    height: 12px;
+  }
+
+  &__decor {
+    position: absolute;
+    bottom: -26px;
+    width: 144px;
+    height: 74px;
+    color: $green-70;
+
+    &--left {
+      left: -85px;
+    }
+
+    &--right {
+      right: -45px;
+      bottom: -34px;
+    }
+
+    @media (min-width: $laptop) {
+      z-index: 1;
+      height: 40px;
+
+      &--left {
+        left: calc(40% - 443px);
+        bottom: 14px;
+      }
+
+      &--right {
+        right: calc(40% - 443px);
+        bottom: 14px;
+      }
+    }
+  }
+}
