@@ -2,6 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .hero {
+  overflow-x: hidden;
   @include flex(flex-start, center, 0);
   flex-direction: column;
 
@@ -25,7 +26,7 @@
   }
 
   &__contant {
-    @include flex(flex-start, center, 16px);
+    @include flex(flex-start, center, 0);
     flex-direction: column;
 
     @media (min-width: $laptop) {
@@ -69,12 +70,18 @@
     font-weight: 500;
     line-height: 150%;
     max-width: 358px;
+    margin-top: 16px;
 
     @media (min-width: $laptop) {
       font-size: 16px;
       min-width: 610px;
       text-align: left;
-      margin-top: 16px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+      margin-top: 20px;
+      max-width: 759px;
     }
   }
 
@@ -86,6 +93,12 @@
     border: 1px solid $green-70;
     background: $green-97;
     @include flex(flex-start, flex-start, 0);
+
+    @media (min-width: $desktop) {
+      width: 130px;
+      height: 68px;
+      padding: 8px 10px;
+    }
   }
 
   &__avatars {
@@ -95,6 +108,11 @@
     &:nth-child(n + 2) {
       margin-left: -16px;
     }
+
+    @media (min-width: $desktop) {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &__text {
@@ -102,10 +120,17 @@
     font-family: $font-urbanist;
     font-size: 18px;
     font-weight: 600;
+    margin-top: 38px;
+    border-bottom: 3px solid $green-70;
 
     @media (min-width: $laptop) {
       font-size: 22px;
       text-align: left;
+      margin-top: 0;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 28px;
     }
   }
 
@@ -115,12 +140,59 @@
     font-family: $font-urbanist;
     font-size: 38px;
     font-weight: 700;
+    margin-top: 10px;
 
     @media (min-width: $laptop) {
       font-size: 48px;
       max-width: 560px;
       text-align: left;
-      margin-top: 10px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 58px;
+      margin-top: 14px;
+    }
+  }
+
+  &__count {
+    font-size: 16px;
+    font-family: $font-urbanist;
+    font-weight: 600;
+    line-height: 150%;
+
+    @media (min-width: $laptop) {
+      font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 20px;
+    }
+  }
+
+  &__controls {
+    margin-top: 30px;
+    @include flex(flex-start, center, 14px);
+  }
+
+  &__btn {
+    width: 123px;
+    height: 49px;
+    background: $green-95;
+    border: 1px solid $green-85;
+
+    @media (min-width: $desktop) {
+      width: 154px;
+      height: 59px;
+    }
+  }
+
+  &__button {
+    width: 147px;
+    height: 49px;
+
+    @media (min-width: $desktop) {
+      width: 187px;
+      height: 59px;
     }
   }
 }
