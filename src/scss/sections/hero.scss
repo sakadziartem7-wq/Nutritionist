@@ -5,9 +5,15 @@
   overflow-x: hidden;
   @include flex(flex-start, center, 0);
   flex-direction: column;
+  padding-bottom: 50px;
 
   @media (min-width: $laptop) {
     flex-direction: row;
+    padding-bottom: 115px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 150px;
   }
 
   &__img {

@@ -1,0 +1,144 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.footer {
+  background: $dark-green-15;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__inner {
+    @include flex(space-between, center, 0);
+    flex-wrap: wrap;
+  }
+
+  &__logo-icon {
+    width: 129px;
+    height: 30px;
+
+    @media (min-width: $desktop) {
+      width: 195px;
+      height: 45px;
+    }
+  }
+
+  &__nav {
+    width: 359px;
+    padding-right: 66px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    @include flex(flex-start, center, 16px);
+
+    @media (min-width: $laptop) {
+      margin-top: 0;
+      width: auto;
+      padding-right: 0;
+      justify-content: center;
+    }
+
+    @media (min-width: $desktop) {
+      gap: 26px;
+    }
+  }
+
+  &__link {
+    color: $white;
+    font-family: $font-urbanist;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+    }
+  }
+
+  &__top {
+    color: $white;
+    font-family: $font-urbanist;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    @include flex(flex-start, center, 6px);
+
+    @media (min-width: $laptop) {
+      order: 1;
+    }
+
+    @media (min-width: $desktop) {
+      gap: 20px;
+      font-size: 18px;
+    }
+  }
+
+  &__top-icon {
+    width: 48px;
+    height: 48px;
+
+    @media (min-width: $desktop) {
+      width: 62px;
+      height: 62px;
+    }
+  }
+
+  &__info {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid $dark-green-25;
+    background: $dark-green-20;
+    margin-top: 30px;
+    @include flex(flex-start, stretch, 16px);
+    flex-direction: column;
+
+    @media (min-width: $laptop) {
+      flex-direction: row;
+      align-items: center;
+      padding: 14px 26px;
+      margin-top: 40px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 50px;
+      padding: 16px 30px;
+    }
+  }
+
+  &__contact {
+    padding: 12px;
+    border-radius: 4px;
+    color: $white;
+    font-family: $font-urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    border: 1px solid $dark-green-25;
+    @include flex(center, center, 4px);
+
+    @media (min-width: $desktop) {
+      padding: 14px;
+      font-size: 18px;
+      border-radius: 6px;
+    }
+  }
+
+  &__contact-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__copyright {
+    text-align: center;
+    color: $grey-95;
+    font-family: $font-urbanist;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+
+    @media (min-width: $laptop) {
+      margin-left: auto;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+    }
+  }
+}
