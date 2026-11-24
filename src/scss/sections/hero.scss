@@ -3,9 +3,9 @@
 
 .hero {
   overflow-x: hidden;
-  @include flex(flex-start, center, 0);
-  flex-direction: column;
   padding-bottom: 50px;
+  flex-direction: column;
+  @include flex(flex-start, center, 0);
 
   @media (min-width: $laptop) {
     flex-direction: row;
