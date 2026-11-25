@@ -4,6 +4,14 @@
 .blogs {
   padding-bottom: 50px;
 
+  @media (min-width: $laptop) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 150px;
+  }
+
   &__top {
     flex-direction: column;
     @include flex(flex-start, center, 0);
@@ -58,6 +66,11 @@
       flex-wrap: wrap;
       margin-top: 60px;
     }
+
+    @media (min-width: $desktop) {
+      gap: 30px;
+      margin-top: 80px;
+    }
   }
 
   &__item {
@@ -69,12 +82,32 @@
     @media (min-width: $laptop) {
       width: calc(50% - 10px);
       padding: 30px;
+
+      &:nth-child(2),
+      &:nth-child(4) {
+        order: 1;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      width: calc(50% - 16px);
+      padding: 40px;
     }
   }
 
   &__img {
     width: 310px;
     height: 200px;
+
+    @media (min-width: $laptop) {
+      width: 570px;
+      height: 336px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 703px;
+      height: 428px;
+    }
   }
 
   &__category {
@@ -84,6 +117,15 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 150%;
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+      margin-top: 40px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+    }
   }
 
   &__item-title {
@@ -92,6 +134,15 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 150%;
+
+    @media (min-width: $laptop) {
+      font-size: 22px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 26px;
+      margin-top: 4px;
+    }
   }
 
   &__item-text {
@@ -101,6 +152,16 @@
     font-weight: 500;
     line-height: 150%;
     margin-top: 18px;
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+      margin-top: 30px;
+    }
   }
 
   &__name {
@@ -109,6 +170,14 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 150%;
+
+    @media (min-width: $laptop) {
+      font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 20px;
+    }
   }
 
   &__meta {
@@ -117,11 +186,29 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 150%;
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+    }
   }
 
   &__avatar {
     width: 40px;
     height: 40px;
+
+    @media (min-width: $laptop) {
+      width: 50px;
+      height: 50px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__footer {
@@ -132,6 +219,17 @@
     background: $green-97;
     flex-wrap: wrap;
     @include flex(flex-start, center, 10px);
+
+    @media (min-width: $laptop) {
+      margin-top: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 20px 16px 20px 16px;
+      border-radius: 12px;
+      margin-top: 30px;
+      gap: 16px;
+    }
   }
 
   &__btn {
@@ -141,6 +239,11 @@
     border: 1px solid $green-90;
     background: $green-95;
     @include flex(center, center, 0);
+
+    @media (min-width: $desktop) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__actions {
