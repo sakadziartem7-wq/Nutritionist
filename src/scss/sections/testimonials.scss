@@ -62,9 +62,9 @@
     @include flex(flex-start, center, 0);
 
     @media (min-width: $laptop) {
-      flex-direction: row;
-      gap: 20px;
       margin-top: 60px;
+      flex-direction: row;
+      @include flex(flex-start, stretch, 20px);
     }
 
     @media (min-width: $desktop) {

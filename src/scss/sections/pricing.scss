@@ -1,0 +1,121 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.pricing {
+  padding-bottom: 50px;
+
+  @media (min-width: $laptop) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 150px;
+  }
+
+  &__top {
+    flex-direction: column;
+    @include flex(flex-start, center, 0);
+  }
+
+  &__title {
+    color: $grey-15;
+    text-align: center;
+    font-family: $font-urbanist;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%;
+
+    @media (min-width: $laptop) {
+      font-size: 38px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 48px;
+    }
+  }
+
+  &__text {
+    color: $grey-20;
+    font-family: $font-urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+    margin-top: 4px;
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+      margin-top: 6px;
+      max-width: 766px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+      margin-top: 10px;
+      max-width: 964px;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 50px;
+    flex-direction: column;
+    @include flex(flex-start, center, 0);
+
+    @media (min-width: $laptop) {
+      margin-top: 60px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 80px;
+    }
+  }
+
+  &__toggle {
+    padding: 10px;
+    border-radius: 8px;
+    width: 207px;
+    border: 1px solid $green-80;
+    @include flex(flex-start, flex-start, 10px);
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+      margin-top: 10px;
+      width: 233px;
+    }
+  }
+
+  &__button {
+    width: 99px;
+    height: 41px;
+    color: $white;
+    font-weight: 600;
+    line-height: 150%;
+    background: $dark-green-20;
+
+    &--btn {
+      background: transparent;
+      border-radius: 100px;
+      color: $grey-30;
+    }
+
+    @media (min-width: $desktop) {
+      width: 114px;
+      height: 47px;
+    }
+  }
+
+  &__note {
+    color: $grey-30;
+    text-align: center;
+    font-family: $font-urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top: 10px;
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+      margin-top: 14px;
+    }
+  }
+}
