@@ -4,6 +4,14 @@
 .testimonials {
   padding-bottom: 50px;
 
+  @media (min-width: $laptop) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 177px;
+  }
+
   &__top {
     flex-direction: column;
     @include flex(flex-start, center, 0);
@@ -76,9 +84,22 @@
 
       @media (min-width: $laptop) {
         display: block;
+        padding: 30px;
+      }
+
+      @media (min-width: $desktop) {
+        padding: 40px;
       }
     }
   }
+
+  .icon-quote {
+    @media (min-width: $desktop) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
   &__item-text {
     color: $grey-20;
     font-family: $font-urbanist;
@@ -86,17 +107,46 @@
     font-weight: 500;
     line-height: 150%;
     margin-top: 40px;
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+      max-width: 670px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+      width: 427px;
+      margin-top: 50px;
+    }
   }
 
   &__author {
     margin-top: 24px;
     background: $green-95;
     @include flex(flex-start, center, 10px);
+
+    @media (min-width: $laptop) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 40px;
+    }
   }
 
   &__avatar {
     width: 40px;
     height: 40px;
+
+    @media (min-width: $laptop) {
+      width: 50px;
+      height: 50px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__controls {
@@ -132,5 +182,21 @@
     &--active {
       background: $dark-green-15;
     }
+  }
+
+  &__name {
+    color: $dark-green-15;
+    font-family: $font-urbanist;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
   }
 }
