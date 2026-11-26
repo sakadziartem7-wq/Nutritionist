@@ -47,6 +47,10 @@
     font-weight: 600;
     line-height: 150%;
 
+    &:hover {
+      color: $dark-green-80;
+    }
+
     @media (min-width: $desktop) {
       font-size: 18px;
     }
