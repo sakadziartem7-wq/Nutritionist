@@ -1,0 +1,92 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.nutrition {
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  @media (min-width: $laptop) {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+
+  &__img {
+    width: 356px;
+    height: 138px;
+
+    @media (min-width: $laptop) {
+      width: 1279px;
+      height: 404px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 1597px;
+      height: 520px;
+    }
+  }
+
+  &__bottom {
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid $green-85;
+    background: $green-95;
+    margin-top: 50px;
+    flex-direction: column;
+    @include flex(flex-start, center, 0);
+
+    @media (min-width: $laptop) {
+      padding: 80px;
+      margin-top: 80px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 100px;
+      padding: 100px;
+    }
+  }
+
+  &__title {
+    color: $grey-15;
+    font-family: $font-urbanist;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 150%;
+    white-space: nowrap;
+
+    @media (min-width: $laptop) {
+      font-size: 38px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 48px;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+    color: $grey-20;
+    font-family: $font-urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: center;
+    max-width: 298px;
+
+    @media (min-width: $laptop) {
+      margin-top: 40px;
+      font-size: 16px;
+      max-width: 1043px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+      margin-top: 50px;
+      max-width: 1346px;
+    }
+  }
+}
