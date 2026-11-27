@@ -2,13 +2,16 @@
 @use "../abstracts/mixins" as *;
 
 .cta {
+  padding-top: 50px;
   padding-bottom: 50px;
 
   @media (min-width: $laptop) {
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 
   @media (min-width: $desktop) {
+    padding-top: 150px;
     padding-bottom: 150px;
   }
 
@@ -26,6 +29,11 @@
       padding: 60px;
       flex-direction: row;
       @include flex(space-between, center, 0);
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 80px;
+      border-radius: 12px;
     }
   }
 
@@ -53,6 +61,10 @@
       text-align: left;
       font-size: 26px;
     }
+
+    @media (min-width: $desktop) {
+      font-size: 34px;
+    }
   }
 
   &__description {
@@ -69,6 +81,11 @@
       font-size: 16px;
       max-width: 905px;
     }
+
+    @media (min-width: $desktop) {
+      font-size: 14px;
+      margin-top: 14px;
+    }
   }
 
   &__btn {
@@ -79,6 +96,11 @@
     @media (min-width: $laptop) {
       width: 123px;
       margin-top: 0;
+    }
+
+    @media (min-width: $desktop) {
+      width: 154px;
+      height: 63px;
     }
   }
 
@@ -102,5 +124,9 @@
     width: 137px;
     height: 137px;
     z-index: 0;
+
+    @media (min-width: $laptop) {
+      bottom: -45px;
+    }
   }
 }
