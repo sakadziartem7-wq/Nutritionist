@@ -141,6 +141,31 @@
         <path d="M138.89 124.75C161.17 147.649 200 131.876 200 99.9264C200 67.9772 161.17 52.2038 138.89 75.1026L114.737 99.9264L138.89 124.75Z" fill="#EEF8D3"/>
     </symbol>
 
+ 
+    <symbol id="icon-members" viewBox="0 0 68 68" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <rect x="1.5" y="1.5" width="65" height="65" rx="11.5" fill="url(#paint0_linear_149_484)"/>
+        <rect x="1.5" y="1.5" width="65" height="65" rx="11.5" fill="url(#pattern0_149_484)" style="mix-blend-mode:luminosity"/>
+        <rect x="1.5" y="1.5" width="65" height="65" rx="11.5" fill="url(#paint1_linear_149_484)"/>
+        <rect x="1.5" y="1.5" width="65" height="65" rx="11.5" stroke="white" stroke-width="3"/>
+        <path d="M29.7674 27.3888C25.8746 23.6012 28.5561 17 33.9875 17C39.4188 17 42.1003 23.6012 38.2075 27.3888L33.9875 31.4947L29.7674 27.3888Z" fill="#1A3129"/>
+        <path d="M29.7928 40.6112C25.9 44.3988 28.5815 51 34.0129 51C39.4442 51 42.1257 44.3988 38.2329 40.6112L34.0129 36.5053L29.7928 40.6112Z" fill="#1A3129"/>
+        <path d="M27.3888 38.2321C23.6012 42.1249 17 39.4434 17 34.012C17 28.5807 23.6012 25.8992 27.3888 29.792L31.4947 34.012L27.3888 38.2321Z" fill="#1A3129"/>
+        <path d="M40.6112 38.2081C44.3988 42.1009 51 39.4195 51 33.9881C51 28.5567 44.3988 25.8753 40.6112 29.7681L36.5053 33.9881L40.6112 38.2081Z" fill="#1A3129"/>
+        <defs>
+        <pattern id="pattern0_149_484" patternContentUnits="objectBoundingBox" width="1.03226" height="2.06452">
+        <use xlink:href="#image0_149_484" transform="scale(0.0129032)"/>
+        </pattern>
+        <linearGradient id="paint0_linear_149_484" x1="34" y1="3" x2="34" y2="65" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#CBEA7B"/>
+        <stop offset="1" stop-color="#CBEA7B" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_149_484" x1="34" y1="3" x2="34" y2="65" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#CBEA7B" stop-opacity="0"/>
+        <stop offset="1" stop-color="#F6FBE9"/>
+        </linearGradient>
+        <image id="image0_149_484" width="80" height="160" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAACgAgMAAADm7QMnAAAADFBMVEWIiIixsbGxsbGxsbF0SLUbAAAABHRSTlP/bytS3QghxwAAAEVJREFUeAFjYA3FAA4Mq17tWrcalVhBtOBK7IL/McFf4rUPZYtGLRq1aNSiUYtGLSJcoYzWR4PBolGLRi0atWjUotH6CAA67a9q5+gpSAAAAABJRU5ErkJggg=="/>
+        </defs>
+    </symbol>
 
 
-</svg>
+  </svg>
