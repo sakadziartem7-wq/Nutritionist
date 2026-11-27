@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.works {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: $laptop) {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+}
+
+.section-lead {
+  margin-top: 50px;
+
+  @media (min-width: $laptop) {
+    margin-top: 100px;
+  }
+}
