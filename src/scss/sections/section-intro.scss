@@ -1,0 +1,99 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.section-intro {
+  padding: 30px;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid $green-85;
+  background: $green-95;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 358px;
+    height: 211px;
+    background: url("../../assets/images/members/Abstract_Design.svg") no-repeat center / contain;
+
+    @media (min-width: $laptop) {
+      width: 643px;
+      height: 326px;
+      top: 225px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 749px;
+      height: 380px;
+      top: 264px;
+    }
+  }
+
+  > * {
+    position: relative;
+  }
+
+  @include flex(flex-start, center, 0);
+
+  @media (min-width: $laptop) {
+    padding: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 100px;
+  }
+
+  &__icon {
+    width: 62px;
+    height: 62px;
+
+    @media (min-width: $desktop) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  &__title {
+    color: $grey-15;
+    margin-top: 30px;
+    text-align: center;
+    font-family: $font-urbanist;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 150%;
+
+    @media (min-width: $laptop) {
+      font-size: 38px;
+      margin-top: 60px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 48px;
+      margin-top: 80px;
+    }
+  }
+
+  &__text {
+    color: $grey-20;
+    text-align: center;
+    margin-top: 6px;
+    font-family: $font-urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+      margin-top: 10px;
+      max-width: 1120px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+      margin-top: 20px;
+      max-width: 1390px;
+    }
+  }
+}
