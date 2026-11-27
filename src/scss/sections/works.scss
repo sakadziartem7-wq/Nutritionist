@@ -14,6 +14,87 @@
     padding-top: 100px;
     padding-bottom: 150px;
   }
+
+  &__list {
+    margin-top: 122px;
+    flex-direction: column;
+    @include flex(flex-start, center, 102px);
+
+    @media (min-width: $laptop) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      @include flex(flex-start, stretch, 40px);
+      row-gap: 132px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid $green-90;
+    background: $green-95;
+
+    &:nth-child(n + 5) {
+      display: none;
+    }
+
+    @media (min-width: $laptop) {
+      width: calc(50% - 20px);
+      padding: 40px;
+
+      &:nth-child(n + 5) {
+        display: block;
+      }
+    }
+  }
+
+  &__number {
+    color: $dark-green-40;
+    font-family: $font-urbanist;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 150%;
+    position: absolute;
+    top: -72px;
+    left: 20px;
+    z-index: -1;
+
+    @media (min-width: $laptop) {
+      font-size: 100px;
+      top: -91px;
+    }
+  }
+
+  &__item-title {
+    color: $grey-15;
+    font-family: $font-urbanist;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    white-space: nowrap;
+    @include flex(flex-start, center, 10px);
+
+    @media (min-width: $laptop) {
+      font-size: 20px;
+    }
+  }
+
+  &__item-text {
+    color: $grey-30;
+    font-family: $font-urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top: 16px;
+    max-width: 259px;
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+      margin-top: 20px;
+      max-width: 540px;
+    }
+  }
 }
 
 .section-lead {
