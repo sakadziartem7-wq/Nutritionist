@@ -12,50 +12,6 @@
     padding-bottom: 150px;
   }
 
-  &__top {
-    flex-direction: column;
-    @include flex(flex-start, center, 0);
-  }
-
-  &__title {
-    color: $grey-15;
-    text-align: center;
-    font-family: $font-urbanist;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 150%;
-
-    @media (min-width: $laptop) {
-      font-size: 38px;
-    }
-
-    @media (min-width: $desktop) {
-      font-size: 48px;
-    }
-  }
-
-  &__text {
-    color: $grey-20;
-    font-family: $font-urbanist;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 150%;
-    text-align: center;
-    margin-top: 4px;
-
-    @media (min-width: $laptop) {
-      font-size: 16px;
-      margin-top: 6px;
-      max-width: 788px;
-    }
-
-    @media (min-width: $desktop) {
-      font-size: 18px;
-      margin-top: 10px;
-      max-width: 1020px;
-    }
-  }
-
   &__list {
     margin-top: 50px;
     flex-direction: column;
