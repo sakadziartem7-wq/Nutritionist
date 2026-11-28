@@ -25,6 +25,13 @@
       flex-wrap: wrap;
       @include flex(flex-start, stretch, 40px);
       row-gap: 132px;
+      margin-top: 152px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 215px;
+      gap: 50px;
+      row-gap: 185px;
     }
   }
 
@@ -47,6 +54,11 @@
         display: block;
       }
     }
+
+    @media (min-width: $desktop) {
+      padding: 50px;
+      width: calc(50% - 25px);
+    }
   }
 
   &__number {
@@ -64,6 +76,11 @@
       font-size: 100px;
       top: -91px;
     }
+
+    @media (min-width: $desktop) {
+      font-size: 150px;
+      top: -145px;
+    }
   }
 
   &__item-title {
@@ -77,6 +94,10 @@
 
     @media (min-width: $laptop) {
       font-size: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 24px;
     }
   }
 
@@ -93,6 +114,11 @@
       font-size: 16px;
       margin-top: 20px;
       max-width: 540px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+      max-width: 673px;
     }
   }
 }
