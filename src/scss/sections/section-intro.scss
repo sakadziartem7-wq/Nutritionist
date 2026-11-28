@@ -1,6 +1,18 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+.section {
+  padding-top: 50px;
+
+  @media (min-width: $laptop) {
+    padding-top: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 150px;
+  }
+}
+
 .section-intro {
   padding: 30px;
   border-radius: 10px 10px 0 0;

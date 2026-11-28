@@ -1,0 +1,232 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.plans {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: $laptop) {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+
+  &__wrapper {
+    flex-direction: column;
+    @include flex(flex-start, center, 0);
+  }
+
+  &__toggle {
+    padding: 10px;
+    border-radius: 8px;
+    width: 207px;
+    border: 1px solid $green-80;
+    @include flex(flex-start, flex-start, 10px);
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+      margin-top: 10px;
+      width: 233px;
+    }
+  }
+
+  &__button {
+    width: 99px;
+    height: 41px;
+    color: $white;
+    font-weight: 600;
+    line-height: 150%;
+    background: $dark-green-20;
+
+    &--btn {
+      background: transparent;
+      border-radius: 100px;
+      color: $grey-30;
+    }
+
+    @media (min-width: $desktop) {
+      width: 114px;
+      height: 47px;
+    }
+  }
+
+  &__list {
+    margin-top: 40px;
+    flex-direction: column;
+    @include flex(flex-start, stretch, 20px);
+
+    @media (min-width: $laptop) {
+      margin-top: 50px;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    @media (min-width: $desktop) {
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid $green-90;
+    background: $green-95;
+
+    @media (min-width: $laptop) {
+      padding: 40px;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 50px;
+    }
+  }
+
+  &__item-title {
+    color: $grey-15;
+    font-family: $font-urbanist;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 150%;
+
+    @media (min-width: $laptop) {
+      font-size: 24px;
+    }
+
+    @media (min-width: $laptop) {
+      font-size: 30px;
+    }
+  }
+
+  &__item-text {
+    color: $grey-30;
+    font-family: $font-urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+    }
+  }
+
+  &__money {
+    color: $dark-green-25;
+    font-family: $font-urbanist;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 87.523%;
+    margin-top: 24px;
+
+    @media (min-width: $laptop) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 50px;
+      margin-top: 40px;
+    }
+  }
+
+  &__btn {
+    width: 298px;
+    margin-top: 24px;
+    height: 45px;
+
+    @media (min-width: $laptop) {
+      width: 333px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 412px;
+      height: 58px;
+      margin-top: 34px;
+    }
+  }
+
+  &__contant {
+    width: 100%;
+    margin-top: 24px;
+    background: $green-85;
+    border-radius: 6px;
+    border: 1px solid $green-85;
+    flex-direction: column;
+    @include flex(flex-start, stretch, 14px);
+
+    @media (min-width: $laptop) {
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    @media (min-width: $laptop) {
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+  }
+
+  &__sab-text {
+    color: $grey-20;
+    font-family: $font-urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 14px 18px;
+    border-bottom: 1px solid $green-80;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+      padding: 16px 20px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 18px;
+      padding: 20px 24px;
+      max-width: 412px;
+    }
+  }
+
+  &__row {
+    margin-top: 16px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    background: $dark-green-20;
+
+    @media (min-width: $laptop) {
+      padding: 16px 20px;
+    }
+
+    @media (min-width: $laptop) {
+      margin-top: 20px;
+      padding: 20px 24px;
+    }
+  }
+
+  &__box {
+    color: $white;
+    font-family: $font-urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    max-width: 350px;
+
+    @media (min-width: $laptop) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $laptop) {
+      font-size: 18px;
+      max-width: 364px;
+    }
+  }
+}
