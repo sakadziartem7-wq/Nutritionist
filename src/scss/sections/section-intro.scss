@@ -41,6 +41,18 @@
       height: 380px;
       top: 264px;
     }
+
+    &--shifted::before {
+      top: 245px;
+
+      @media (min-width: $laptop) {
+        top: 245px;
+      }
+
+      @media (min-width: $desktop) {
+        top: 314px;
+      }
+    }
   }
 
   > * {
